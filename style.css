@@ -60,14 +60,21 @@ body {
     /* Выключает точки у списка */
     list-style-type: none;
     margin: 173px auto;
+    display: flex;
+    max-width: 1060px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
 
 }
 
 .gallery__item {
+    max-width: 330px;
 
 }
 
 .image {
+    width: 100%;
     
 }
 
