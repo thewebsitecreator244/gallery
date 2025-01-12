@@ -57,25 +57,23 @@ body {
 }
 
 .gallery {
-    /* Выключает точки у списка */
     list-style-type: none;
     margin: 173px auto;
+
     display: flex;
     max-width: 1060px;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 35px;
-
 }
 
 .gallery__item {
     max-width: 330px;
-
+    position: relative;
 }
 
 .image {
     width: 100%;
-    
 }
 
 .footer {
@@ -89,7 +87,6 @@ body {
 .footer__overlay {
     display: flex;
     height: 100%;
-    width: 100%;
     background: linear-gradient(180deg, #0F0804 0%, rgba(0, 0, 0, 0.6) 100%);
 }
 
@@ -97,4 +94,25 @@ body {
     margin: auto;
     font-size: 40px;
     color: white;
+}
+.like,.fav{
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    
+}
+
+.like{
+    background-image: url(./Like.svg);
+    bottom: 15px;
+    right: 70px;
+}
+.fav{
+    background-image: url(./Choosen.svg);
+    bottom: 15px;
+    right: 30px;
 }
