@@ -70,10 +70,13 @@ body {
 .gallery__item {
     max-width: 330px;
     position: relative;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .image {
     width: 100%;
+    transition: 500ms;
 }
 
 .footer {
@@ -123,4 +126,31 @@ body {
 }
 .fav:hover{
     background-image: url(Choosen_active.svg);
+}
+.fade{
+    color: transparent;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.gallery__item:hover .fade{
+    background-color: #0f08048b;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+
+.gallery__item:hover .image{
+    transform: scale(1.1);
 }
