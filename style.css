@@ -110,9 +110,17 @@ body {
     background-image: url(./Like.svg);
     bottom: 15px;
     right: 70px;
+    fill: none;
 }
 .fav{
     background-image: url(./Choosen.svg);
     bottom: 15px;
     right: 30px;
+    fill: none;
+}
+.like:hover{
+    background-image: url(Like_active.svg);
+}
+.fav:hover{
+    background-image: url(Choosen_active.svg);
 }
